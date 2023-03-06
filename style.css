@@ -1,15 +1,60 @@
+:root {
+    --text: #d9e0ee;
+    --text-em: #8ac926;
+    --bg: #261a35;
+    --bg-mid: #ffffff08;
+    --red: #ec6a88;
+    --green: #3fdaa4;
+    --blue: #3fc6de;
+}
+
+*
+{
+    font-size: 1.2rem;
+}
+
 body
 {
-    background-color: #453C67;
-    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Fira Mono", liberation mono, monospace;
+    background-color: var(--bg);
+    color: var(--text);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    padding: 2.625rem 1.3125rem 0.2rem 1.3125;
     
 }
+
 strong
 {
     color: #FC5185;
 }
-em
+h2
 {
-    color:#3FC1C9;
+    color: var(--text-em);
 }
 
+a
+{
+    font-weight: bold;
+    text-decoration: underline wavy;
+    color: #1982c4;
+}
+a:hover{ color:#FC5185}
+
+#aboutme
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#license 
+{
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bg-mid);
+}
